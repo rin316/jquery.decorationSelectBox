@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>jquery.tooltip.js</title>
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="./resources/css/import.css">
+<script src="./resources/js/loader.js"></script>
+</head>
+
+<body>
+<div id="document">
+
+<div id="header">
+	<div class="container">
+		<h1>jquery.tooltip.js [DEMO]</h1>
+		<div>
+			<p>[Code]<br />
+				<a href="https://github.com/rin316/jquery.tooltip/">https://github.com/rin316/jquery.tooltip/</a></p>
+			<p>[Download]<br />
+				<a href="https://github.com/rin316/jquery.tooltip/zipball/gh-pages">https://github.com/rin316/jquery.tooltip/zipball/gh-pages</a></p>
+			<p>[author]<br />
+				<a href="http://5am.jp/">rin316</a> [Yuta Hayashi]</p>
+		</div>
+	</div>
+<!-- /#header --></div>
+
+<hr>
+
+<div id="contents">
+	<div class="container">
+		<h2>Introduction</h2>
+		<p>select box 装飾プラグイン。</p>
+	</div>
+
+	<hr>
+
+	<div class="container">
+		<h2>setting</h2>
+		<div class="row">
+			<div class="span4" id="sample1-1">
+				<div class="mod-decorationSelectBox-updateArea"></div>
+				<select class="mod-decorationSelectBox-select">
+					<option class="mod-FM-2-option" value="" selected>日付を選択してください</option>
+					<option class="mod-FM-2-option" value="2012年01月00日">2012年01月00日</option>
+					<option class="mod-FM-2-option" value="2012年02月00日">2012年02月00日</option>
+					<option class="mod-FM-2-option" value="2012年03月00日">2012年03月00日</option>
+					<option class="mod-FM-2-option" value="2012年04月00日">2012年04月00日</option>
+					<option class="mod-FM-2-option" value="2012年05月00日">2012年05月00日</option>
+					<option class="mod-FM-2-option" value="2012年06月00日">2012年06月00日</option>
+				</select>
+			</div>
+			<div class="span8">
+<pre>
+$(document).ready(function(){
+	$('#sample1-1 > div').tooltip();
+});
+</pre>
+<pre>
+&lt;div id="sample1-1"&gt;
+	&lt;div title="タイトル1 1000yen"&gt;テキスト&lt;/div&gt;
+	&lt;div title="タイトル2 2000yen"&gt;テキスト&lt;/div&gt;
+	&lt;div title="タイトル3 3000yen"&gt;テキスト&lt;/div&gt;
+&lt;/div>
+</pre>
+			</div>
+		</div>
+	</div>
+	
+	<hr>
+
+	<!-- /#contents --></div>
+
+<!-- /#document --></div>
+</body>
+</html>
